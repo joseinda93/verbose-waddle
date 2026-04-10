@@ -1,1 +1,285 @@
-file:///Users/josecalvoaguilar/Downloads/avgo_risk_report_1.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVGO Risk Score Report</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#08090d;--bg2:#0e1018;--bg3:#151822;--bg4:#1c2030;--border:#1e2235;--text:#e2e4ec;--text2:#9498ad;--text3:#5c6078;--green:#22c55e;--green-bg:rgba(34,197,94,.08);--red:#ef4444;--red-bg:rgba(239,68,68,.08);--amber:#f59e0b;--amber-bg:rgba(245,158,11,.08);--accent:#6366f1;--accent2:#818cf8}
+html{font-size:15px;background:var(--bg);color:var(--text)}body{font-family:'DM Sans',sans-serif;line-height:1.5}.mono{font-family:'JetBrains Mono',monospace}
+.page{max-width:1120px;margin:0 auto;padding:32px 24px;page-break-after:always}.page:last-child{page-break-after:auto}
+.sb{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:var(--bg2);border:1px solid var(--border);border-radius:12px;margin-bottom:22px;flex-wrap:wrap;gap:12px}
+.tk{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700;letter-spacing:-1px;color:#fff}
+.nm{font-size:.85rem;color:var(--text2);margin-left:12px}
+.pr{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:600;color:#fff}
+.ch{font-family:'JetBrains Mono',monospace;font-size:.85rem;padding:3px 8px;border-radius:6px}
+.ch.up{background:var(--green-bg);color:var(--green)}.ch.dn{background:var(--red-bg);color:var(--red)}
+.mt{font-size:.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace}
+.gs{display:grid;grid-template-columns:280px 1fr;gap:22px;margin-bottom:22px;align-items:start}
+.gc{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:26px;text-align:center}
+.gl{font-size:.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--text3);margin-bottom:14px}
+.gsvg{width:220px;height:130px;margin:0 auto}
+.gsc{font-family:'JetBrains Mono',monospace;font-size:3.2rem;font-weight:700;color:#fff;margin-top:4px}
+.gv{font-size:.9rem;font-weight:600;margin-top:2px;color:var(--green)}
+.gd{font-size:.62rem;color:var(--text3);margin-top:7px;font-family:'JetBrains Mono',monospace}
+.ks{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.k{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:13px 12px}
+.kl{font-size:.58rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);margin-bottom:3px}
+.kv{font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:600;color:#fff}
+.ksb{font-size:.58rem;color:var(--text2);margin-top:2px;font-family:'JetBrains Mono',monospace}
+.cs{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:20px;margin:22px 0}
+.ct-title{font-size:.68rem;text-transform:uppercase;letter-spacing:2px;color:var(--text3);margin-bottom:12px}
+.st{font-size:.68rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--text3);margin:26px 0 12px;border-bottom:1px solid var(--border);padding-bottom:7px}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-bottom:11px}
+.c{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:15px;position:relative;overflow:hidden}
+.c::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:10px 10px 0 0}
+.c.g::before{background:var(--green)}.c.r::before{background:var(--red)}.c.a::before{background:var(--amber)}
+.cl{font-size:.58rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--text3);margin-bottom:5px}
+.cv{font-family:'JetBrains Mono',monospace;font-size:1.12rem;font-weight:600;color:#fff}
+.cn{font-size:.66rem;color:var(--text2);margin-top:3px}
+.tg{display:inline-block;font-size:.52rem;font-family:'JetBrains Mono',monospace;padding:2px 6px;border-radius:4px;margin-top:5px;font-weight:600;text-transform:uppercase;letter-spacing:.8px}
+.tg.b{background:var(--green-bg);color:var(--green)}.tg.m{background:var(--red-bg);color:var(--red)}.tg.w{background:var(--amber-bg);color:var(--amber)}
+.bd{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:17px;margin:18px 0}
+.br{display:flex;align-items:center;gap:11px;margin-bottom:9px}.br:last-child{margin-bottom:0}
+.bl{width:155px;font-size:.68rem;color:var(--text2);flex-shrink:0;font-family:'JetBrains Mono',monospace}
+.bt{flex:1;height:8px;background:var(--bg4);border-radius:4px;overflow:hidden}
+.bf{height:100%;border-radius:4px}
+.bs{width:42px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;color:#fff}
+.tw{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow-x:auto;margin:15px 0}
+table{width:100%;border-collapse:collapse;font-size:.78rem}
+th{background:var(--bg3);text-align:left;padding:9px 13px;font-size:.58rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);font-weight:600}
+td{padding:9px 13px;border-top:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:.74rem}
+.uv{color:var(--green)}.dv{color:var(--red)}.fv{color:var(--amber)}
+.du{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:15px 0}
+.dc{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:17px}
+.dc h3{font-size:.62rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:11px;display:flex;align-items:center;gap:5px}
+.dc.ca h3{color:var(--green)}.dc.ri h3{color:var(--red)}
+.dc li{font-size:.76rem;color:var(--text2);margin-bottom:7px;padding-left:13px;position:relative;list-style:none;line-height:1.42}
+.dc.ca li::before{content:'▸';position:absolute;left:0;color:var(--green)}
+.dc.ri li::before{content:'▾';position:absolute;left:0;color:var(--red)}
+.bb{background:var(--bg2);border:1px solid var(--accent);border-radius:14px;padding:22px;margin-top:18px}
+.bb h3{font-size:.62rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent2);margin-bottom:12px}
+.rb{display:flex;gap:3px;margin:10px 0;height:30px}
+.rb .s{flex:1;border-radius:4px;opacity:.2}.rb .s.on{opacity:1}
+.vt{font-size:.88rem;color:var(--text);line-height:1.55;margin-top:10px}.vt strong{color:#fff}
+.eb{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:17px;margin:15px 0}
+.eb h3{font-size:.62rem;text-transform:uppercase;letter-spacing:2px;color:var(--text3);margin-bottom:8px}
+.eb p{font-size:.78rem;color:var(--text2);line-height:1.5}
+.hl{color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:600}
+.ft{text-align:center;padding:18px 0;font-size:.58rem;color:var(--text3);letter-spacing:1px;font-family:'JetBrains Mono',monospace}
+.cpb{position:fixed;bottom:22px;right:22px;background:var(--accent);color:#fff;border:none;padding:10px 17px;border-radius:8px;font-size:.72rem;font-family:'DM Sans',sans-serif;font-weight:600;cursor:pointer;z-index:999;display:flex;align-items:center;gap:6px;box-shadow:0 4px 20px rgba(99,102,241,.4);transition:all .2s}
+.cpb:hover{transform:translateY(-2px)}.cpd{background:var(--green)!important}
+@media(max-width:768px){.gs{grid-template-columns:1fr}.cg{grid-template-columns:1fr 1fr}.du{grid-template-columns:1fr}.ks{grid-template-columns:repeat(3,1fr)}}
+@media print{.cpb{display:none}}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+<div class="sb">
+<div style="display:flex;align-items:baseline"><span class="tk">AVGO</span><span class="nm">Broadcom Inc. · NASDAQ</span></div>
+<div style="display:flex;align-items:baseline;gap:10px"><span class="pr">$324.50</span><span class="ch up">+68% 1yr</span></div>
+<div class="mt">Apr 9, 2026 · β 1.26 · MCap $1.49T · Div $0.65/q</div>
+</div>
+
+<div class="gs">
+<div class="gc">
+<div class="gl">Composite Risk Score</div>
+<svg class="gsvg" viewBox="0 0 220 130">
+<defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22c55e"/><stop offset="40%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#dc2626"/></linearGradient></defs>
+<path d="M 20 110 A 90 90 0 0 1 200 110" fill="none" stroke="#1e2235" stroke-width="14" stroke-linecap="round"/>
+<path d="M 20 110 A 90 90 0 0 1 200 110" fill="none" stroke="url(#gg)" stroke-width="14" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="220"/>
+<line x1="110" y1="110" x2="47" y2="54" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+<circle cx="110" cy="110" r="5" fill="#fff"/>
+<text x="16" y="126" fill="#5c6078" font-size="9" font-family="JetBrains Mono">0</text>
+<text x="104" y="18" fill="#5c6078" font-size="9" font-family="JetBrains Mono">50</text>
+<text x="192" y="126" fill="#5c6078" font-size="9" font-family="JetBrains Mono">100</text>
+</svg>
+<div class="gsc">22</div>
+<div class="gv">LOW RISK</div>
+<div class="gd">35% Val · 35% Health · 30% Growth</div>
+</div>
+<div class="ks">
+<div class="k"><div class="kl">Market Cap</div><div class="kv">$1.49T</div></div>
+<div class="k"><div class="kl">P/E (TTM)</div><div class="kv">60.3x</div><div class="ksb">Fwd 23.2x</div></div>
+<div class="k"><div class="kl">AI Revenue (Q1)</div><div class="kv">$8.4B</div><div class="ksb">+106% YoY</div></div>
+<div class="k"><div class="kl">Total Rev (Q1)</div><div class="kv">$19.3B</div><div class="ksb">+29% YoY</div></div>
+<div class="k"><div class="kl">Adj EBITDA Mgn</div><div class="kv">68%</div><div class="ksb">$13.1B record</div></div>
+<div class="k"><div class="kl">FCF (Q1)</div><div class="kv">$8.0B</div><div class="ksb">41% of revenue</div></div>
+<div class="k"><div class="kl">Analyst Target</div><div class="kv">$438</div><div class="ksb" style="color:var(--green)">+35% upside</div></div>
+<div class="k"><div class="kl">Next Earnings</div><div class="kv" style="font-size:.88rem">Jun 11</div><div class="ksb">Q2 FY26</div></div>
+</div>
+</div>
+
+<!-- 12-MONTH PRICE CHART -->
+<div class="cs">
+<div class="ct-title">12-Month Price Chart · AVGO · Apr 2025 – Apr 2026</div>
+<svg viewBox="0 0 1060 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+<defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" stop-opacity=".22"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/></linearGradient></defs>
+<g stroke="#1e2235" stroke-width=".5"><line x1="50" y1="20" x2="50" y2="250"/><line x1="50" y1="250" x2="1040" y2="250"/>
+<line x1="50" y1="66" x2="1040" y2="66" stroke-dasharray="4,4" opacity=".4"/>
+<line x1="50" y1="112" x2="1040" y2="112" stroke-dasharray="4,4" opacity=".4"/>
+<line x1="50" y1="158" x2="1040" y2="158" stroke-dasharray="4,4" opacity=".4"/>
+<line x1="50" y1="204" x2="1040" y2="204" stroke-dasharray="4,4" opacity=".4"/></g>
+<!-- Y: 140 bottom (y=250), 360 top (y=20). scale: y = 250 - (p-140)*1.045 -->
+<g fill="#5c6078" font-size="9" font-family="JetBrains Mono" text-anchor="end">
+<text x="44" y="254">$140</text><text x="44" y="208">$185</text><text x="44" y="162">$230</text><text x="44" y="116">$275</text><text x="44" y="70">$320</text><text x="44" y="24">$365</text></g>
+<g fill="#5c6078" font-size="8.5" font-family="JetBrains Mono" text-anchor="middle">
+<text x="126" y="268">May</text><text x="202" y="268">Jun</text><text x="278" y="268">Jul</text><text x="354" y="268">Aug</text><text x="430" y="268">Sep</text><text x="506" y="268">Oct</text><text x="582" y="268">Nov</text><text x="658" y="268">Dec</text><text x="734" y="268">Jan</text><text x="810" y="268">Feb</text><text x="886" y="268">Mar</text><text x="962" y="268">Apr</text></g>
+<!-- Price points: Apr25:180 May:200 Jun:215 Jul:230 Aug:210 Sep:218 Oct:235 Nov:252 Dec:315 Jan:280 Feb:270 Mar:310 Apr:325 -->
+<!-- y = 250 - (p-140)*1.045 -->
+<!-- 180→208, 200→187, 215→172, 230→156, 210→177, 218→169, 235→151, 252→133, 315→67, 280→104, 270→114, 310→72, 325→57 -->
+<polygon fill="url(#ag)" points="50,208 126,187 202,172 278,156 354,177 430,169 506,151 582,133 658,67 734,104 810,114 886,72 962,57 962,250 50,250"/>
+<polyline fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="50,208 126,187 202,172 278,156 354,177 430,169 506,151 582,133 658,67 734,104 810,114 886,72 962,57"/>
+<!-- Dec surge (Q4 FY25 earnings) -->
+<circle cx="658" cy="67" r="5" fill="#a855f7" stroke="#08090d" stroke-width="2"/>
+<rect x="615" y="44" width="86" height="18" rx="4" fill="#1c2030" stroke="#a855f7" stroke-width=".5"/>
+<text x="658" y="56" text-anchor="middle" fill="#a855f7" font-size="7.5" font-family="JetBrains Mono" font-weight="600">Q4 EARNINGS</text>
+<!-- Mar Q1 FY26 earnings -->
+<circle cx="886" cy="72" r="4" fill="#f59e0b" stroke="#08090d" stroke-width="2"/>
+<rect x="835" y="82" width="102" height="18" rx="4" fill="#1c2030" stroke="#f59e0b" stroke-width=".5"/>
+<text x="886" y="94" text-anchor="middle" fill="#f59e0b" font-size="7.5" font-family="JetBrains Mono" font-weight="600">Q1 FY26 · $19.3B</text>
+<!-- Google/Anthropic deals Apr -->
+<circle cx="962" cy="57" r="5" fill="#22c55e" stroke="#08090d" stroke-width="2"/>
+<rect x="880" y="32" width="110" height="18" rx="4" fill="#1c2030" stroke="#22c55e" stroke-width=".5"/>
+<text x="935" y="44" text-anchor="middle" fill="#22c55e" font-size="7" font-family="JetBrains Mono" font-weight="600">GOOGLE+ANTHROPIC</text>
+<!-- Apr 2025 low -->
+<circle cx="50" cy="208" r="4" fill="#ef4444" stroke="#08090d" stroke-width="2"/>
+<rect x="56" y="197" width="68" height="17" rx="4" fill="#1c2030" stroke="#ef4444" stroke-width=".5"/>
+<text x="90" y="209" text-anchor="middle" fill="#ef4444" font-size="7.5" font-family="JetBrains Mono" font-weight="600">~$180</text>
+<!-- Current -->
+<text x="962" y="48" text-anchor="middle" fill="#22c55e" font-size="9.5" font-family="JetBrains Mono" font-weight="700">$325</text>
+</svg>
+</div>
+
+<div class="st">Valuation · 35% Weight — Score: 42/100</div>
+<div class="cg">
+<div class="c g"><div class="cl">Forward P/E</div><div class="cv">23.2x</div><div class="cn">Cheapest mega-cap AI exposure</div><span class="tg b">Attractive</span></div>
+<div class="c g"><div class="cl">PEG Ratio</div><div class="cv">0.57</div><div class="cn">Exceptional growth-adjusted value</div><span class="tg b">Cheap</span></div>
+<div class="c a"><div class="cl">Trailing P/E</div><div class="cv">60.3x</div><div class="cn">Elevated on GAAP basis</div><span class="tg w">Stretched</span></div>
+<div class="c a"><div class="cl">EV/EBITDA</div><div class="cv">39.7x</div><div class="cn">Premium but growth justifies</div><span class="tg w">Elevated</span></div>
+<div class="c g"><div class="cl">Analyst Consensus</div><div class="cv">Strong Buy · $438</div><div class="cn">29 analysts · 96% Buy</div><span class="tg b">Unanimous</span></div>
+<div class="c g"><div class="cl">P/S (Fwd)</div><div class="cv">13.3x</div><div class="cn">Reasonable for AI semi leader</div><span class="tg b">Fair</span></div>
+</div>
+
+<div class="st">Financial Health · 35% Weight — Score: 12/100</div>
+<div class="cg">
+<div class="c g"><div class="cl">Gross Margin</div><div class="cv">77%</div><div class="cn">Elite semiconductor margins</div><span class="tg b">Best-in-Class</span></div>
+<div class="c g"><div class="cl">Adj EBITDA Margin</div><div class="cv">68%</div><div class="cn">$13.1B record · Massive leverage</div><span class="tg b">Elite</span></div>
+<div class="c g"><div class="cl">Free Cash Flow</div><div class="cv">$8.0B (Q1)</div><div class="cn">41% FCF margin · Annualized ~$30B+</div><span class="tg b">Machine</span></div>
+<div class="c g"><div class="cl">Current Ratio</div><div class="cv">1.90</div><div class="cn">Strong liquidity position</div><span class="tg b">Healthy</span></div>
+<div class="c a"><div class="cl">Debt / Equity</div><div class="cv">0.83</div><div class="cn">Manageable but elevated from VMware</div><span class="tg w">Monitor</span></div>
+<div class="c g"><div class="cl">Capital Returns</div><div class="cv">$10B buyback + div</div><div class="cn">$0.65/q div + new repurchase</div><span class="tg b">Shareholder</span></div>
+</div>
+
+<div class="st">Growth · 30% Weight — Score: 10/100</div>
+<div class="cg">
+<div class="c g"><div class="cl">AI Revenue Growth</div><div class="cv">+106% YoY</div><div class="cn">$8.4B Q1 → $10.7B Q2 guide</div><span class="tg b">Explosive</span></div>
+<div class="c g"><div class="cl">Total Revenue</div><div class="cv">+29% YoY</div><div class="cn">$19.3B record · $22B Q2 guide (+47%)</div><span class="tg b">Accelerating</span></div>
+<div class="c g"><div class="cl">FY27 AI Target</div><div class="cv">>$100B</div><div class="cn">CEO line-of-sight across 6 customers</div><span class="tg b">Transformative</span></div>
+<div class="c g"><div class="cl">Customer Expansion</div><div class="cv">6 hyperscalers</div><div class="cn">Google, Anthropic, Meta + 3 more</div><span class="tg b">Widening</span></div>
+<div class="c g"><div class="cl">Semiconductor Solutions</div><div class="cv">+52% YoY</div><div class="cn">$12.5B record · XPU + networking</div><span class="tg b">Surging</span></div>
+<div class="c a"><div class="cl">Infra Software</div><div class="cv">+1% YoY</div><div class="cn">$6.8B · VMware integration maturing</div><span class="tg w">Flat</span></div>
+</div>
+
+<div class="bd">
+<div style="font-size:.62rem;text-transform:uppercase;letter-spacing:2px;color:var(--text3);margin-bottom:12px">Score Breakdown · 35% Valuation / 35% Financial Health / 30% Growth</div>
+<div class="br"><div class="bl">Valuation (35%)</div><div class="bt"><div class="bf" style="width:42%;background:var(--amber)"></div></div><div class="bs">42</div></div>
+<div class="br"><div class="bl">Financial Health (35%)</div><div class="bt"><div class="bf" style="width:12%;background:var(--green)"></div></div><div class="bs">12</div></div>
+<div class="br"><div class="bl">Growth (30%)</div><div class="bt"><div class="bf" style="width:10%;background:var(--green)"></div></div><div class="bs">10</div></div>
+<div class="br" style="margin-top:6px;padding-top:9px;border-top:1px solid var(--border)"><div class="bl" style="color:#fff;font-weight:600">Composite</div><div class="bt"><div class="bf" style="width:22%;background:var(--green)"></div></div><div class="bs" style="font-size:.85rem">22</div></div>
+<div style="font-size:.55rem;color:var(--text3);margin-top:8px;font-style:italic">0 = lowest risk · 100 = highest risk · (.35×42)+(.35×12)+(.30×10) = 22</div>
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+<div class="sb">
+<div style="display:flex;align-items:baseline"><span class="tk">AVGO</span><span class="nm">Page 2 · Trends, Catalysts & Verdict</span></div>
+<div class="mt">Risk Score: 22/100 · Low · Apr 9, 2026</div>
+</div>
+
+<div class="st">Quarterly Trend · FY2025–FY2026 (Nov Fiscal Year)</div>
+<div class="tw"><table><thead><tr>
+<th>Metric</th><th>Q2 FY25<br><span style="font-weight:400;text-transform:none;letter-spacing:0">May '25</span></th><th>Q3 FY25<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Aug '25</span></th><th>Q4 FY25<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Nov '25</span></th><th>Q1 FY26<br><span style="font-weight:400;text-transform:none;letter-spacing:0">Feb '26</span></th><th>Trend</th>
+</tr></thead><tbody>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Total Revenue</td><td>$14.9B</td><td>$15.8B</td><td>$18.0B</td><td class="uv">$19.3B</td><td class="uv">▲ +29%</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">AI Semi Revenue</td><td>$4.1B</td><td>$5.2B</td><td>$7.1B</td><td class="uv">$8.4B</td><td class="uv">▲ +106%</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Semi Solutions</td><td>$8.2B</td><td>$8.8B</td><td>$11.1B</td><td class="uv">$12.5B</td><td class="uv">▲ +52%</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Infra Software</td><td>$6.7B</td><td>$6.6B</td><td>$6.9B</td><td class="fv">$6.8B</td><td class="fv">◆ +1%</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Non-GAAP EPS</td><td>$1.64</td><td>$1.74</td><td>$1.94</td><td class="uv">$2.05</td><td class="uv">▲ +28%</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Adj EBITDA</td><td>$10.1B</td><td>$10.5B</td><td>$12.0B</td><td class="uv">$13.1B</td><td class="uv">▲ 68% mgn</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">Gross Margin</td><td>~68%</td><td>~74%</td><td>~76%</td><td class="uv">77%</td><td class="uv">▲ Expanding</td></tr>
+<tr><td style="color:var(--text2);font-family:'DM Sans',sans-serif">FCF</td><td>$6.0B</td><td>$6.4B</td><td>$7.5B</td><td class="uv">$8.0B</td><td class="uv">▲ Record</td></tr>
+</tbody></table></div>
+
+<div class="eb">
+<h3>Latest Earnings · Q1 FY2026 · Mar 4, 2026</h3>
+<p>Broadcom delivered a massive beat: <span class="hl">$19.3B</span> revenue (+29% YoY) vs $19.26B est, non-GAAP EPS <span class="hl">$2.05</span> vs $2.02 est. AI semiconductor revenue hit <span class="hl">$8.4B (+106% YoY)</span> — above forecast. Adj EBITDA record $13.1B (68%). FCF $8.0B (41% margin). Q2 guide: <span class="hl">$22.0B (+47% YoY)</span> with AI semi revenue of $10.7B (+140% YoY). Customer base expanded to 6 hyperscalers. CEO Hock Tan stated "line of sight" to <span class="hl">>$100B AI chip revenue in FY2027</span>. $10B new buyback + $0.65/q dividend. Google and Anthropic long-term supply agreements announced in April. TSMC capacity flagged as bottleneck — fully stretched through 2028.</p>
+</div>
+
+<div class="st">Catalysts vs Risk Factors</div>
+<div class="du">
+<div class="dc ca"><h3>⚡ Catalysts</h3><ul>
+<li><strong>$100B FY27 AI revenue target:</strong> Management has "line of sight" — 5x jump from FY25's $20B, supported by 6 hyperscaler programs</li>
+<li><strong>Google + Anthropic deals:</strong> Long-term supply agreements for custom AI XPUs — Apr 2026 announcements drove stock higher</li>
+<li><strong>Q2 guide $22B (+47%):</strong> AI semi accelerating to $10.7B (+140% YoY) — the growth rate is increasing, not decreasing</li>
+<li><strong>2nm XPU tapeout:</strong> Industry-first 3.5D packaging at 10,000 teraflops — technology moat deepening</li>
+<li><strong>Tomahawk 6/7:</strong> 100Tbps switching enables 1M XPU clusters — AI networking becoming larger AI rev share</li>
+<li><strong>$970M DISA defense deal:</strong> Government/defense revenue diversification via Carahsoft partnership</li>
+</ul></div>
+<div class="dc ri"><h3>⚠ Risk Factors</h3><ul>
+<li><strong>TSMC capacity maxed:</strong> Broadcom warned capacity is "fully stretched" through 2028 — supply bottleneck could cap upside</li>
+<li><strong>Customer concentration:</strong> 6 hyperscalers drive AI revenue — loss of any single customer is material</li>
+<li><strong>Infra Software flat:</strong> VMware segment grew only 1% YoY — $6.8B vs higher expectations, integration upside may be exhausted</li>
+<li><strong>CFO transition:</strong> Transition effective Jun 12, 2026 — leadership continuity risk during hypergrowth</li>
+<li><strong>Inventory build:</strong> Days inventory rose to 68 — potential demand-supply mismatch signal</li>
+<li><strong>Anthropic data center financing:</strong> Seaport Research flags Broadcom may need to help fund customer capex — margin risk</li>
+</ul></div>
+</div>
+
+<div class="bb">
+<h3>Bottom Line · Investment Verdict</h3>
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+<span class="mono" style="font-size:.6rem;color:var(--red)">SELL</span>
+<div class="rb" style="flex:1">
+<div class="s" style="background:var(--red)"></div>
+<div class="s" style="background:var(--red)"></div>
+<div class="s" style="background:var(--amber)"></div>
+<div class="s on" style="background:var(--green)"></div>
+<div class="s on" style="background:var(--green)"></div>
+</div>
+<span class="mono" style="font-size:.6rem;color:var(--green)">BUY</span>
+</div>
+<div style="text-align:center;margin:8px 0">
+<span style="font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--green);letter-spacing:1px">BUY — CORE AI INFRASTRUCTURE POSITION</span>
+</div>
+<p class="vt">
+Broadcom is the <strong>single best risk-adjusted play on the AI infrastructure buildout</strong>. At 23x forward earnings with a 0.57 PEG ratio, it's the cheapest mega-cap AI exposure available — cheaper than NVDA, MSFT, or GOOGL on a growth-adjusted basis. <strong>AI revenue is accelerating</strong> (not decelerating): +106% in Q1, guided +140% in Q2, with CEO line-of-sight to $100B by FY2027. The 77% gross margin, 68% EBITDA margin, and $8B quarterly FCF make it a compounding machine. The Google and Anthropic long-term supply deals provide multi-year visibility.
+<br><br>
+<strong>Position: 5–7% core holding.</strong> Entry zone $290–325 is attractive. The TSMC bottleneck is the primary near-term risk — if supply constrains execution, the $100B FY27 target may slip. But Broadcom's custom ASIC moat (XPUs, networking, SerDes) makes it irreplaceable to its 6 hyperscaler customers. The Jun 11 Q2 earnings will validate or challenge the $22B guidance. Infrastructure software flatness is a secondary concern but manageable given the AI revenue surge. This is the rare stock where both growth investors and value investors can agree.
+</p>
+</div>
+
+<div class="ft">
+SOURCES: BROADCOM 8-K (SEC), YAHOO FINANCE, STOCKANALYSIS, INVESTING.COM, FUTURUM, 24/7 WALL ST, TIPRANKS, CNN<br>
+DATA AS OF APR 9, 2026 · NOT FINANCIAL ADVICE · FOR INFORMATIONAL PURPOSES ONLY
+</div>
+</div>
+
+<button class="cpb" id="cb" onclick="copyReport()">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+Copy Report
+</button>
+
+<script>
+function copyReport(){
+const t=document.getElementById('page1').innerText+'\n\n---PAGE 2---\n\n'+document.getElementById('page2').innerText;
+navigator.clipboard.writeText(t).then(()=>{const b=document.getElementById('cb');b.classList.add('cpd');b.innerHTML='✓ Copied!';setTimeout(()=>{b.classList.remove('cpd');b.innerHTML='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy Report'},2e3)})
+}
+</script>
+</body>
+</html>
